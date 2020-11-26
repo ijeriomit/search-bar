@@ -1,0 +1,25 @@
+{
+  "name": "@bit/ijeriomit.vue-component.search-bar",
+  "version": "0.0.7",
+  "homepage": "https://bit.dev/ijeriomit/vue-component/search-bar",
+  "main": "dist/search-bar.common.js",
+  "componentId": {
+    "scope": "ijeriomit.vue-component",
+    "name": "search-bar",
+    "version": "0.0.7"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/vue-fontawesome": "^0.1.10"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/vue@0.1.13"
+    }
+  },
+  "browser": "search-bar.umd.js"
+}
