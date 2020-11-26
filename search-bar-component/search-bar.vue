@@ -102,7 +102,7 @@
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faSearch, faTimes } from "@fortawesome/free-solid-svg-icons";
-import propDefaultLogger from "@/utils/propDefaultLogger.js";
+import defaultPropValueMessage from "@bit/ijeriomit.vue-component.console-logger";
 
 export default {
   name: "search-bar",
@@ -112,7 +112,7 @@ export default {
       required: true,
       default: () => {
         const value = "";
-        propDefaultLogger(
+        defaultPropValueMessage(
           3,
           "Search-Bar",
           "exampleSearchTerm",
@@ -127,7 +127,7 @@ export default {
       required: false,
       default: () => {
         const value = false;
-        propDefaultLogger(
+        defaultPropValueMessage(
           0,
           "Search-Bar",
           "searchOnType",
@@ -141,7 +141,7 @@ export default {
       type: Function,
       required: true,
       default: () => {
-        propDefaultLogger(
+        defaultPropValueMessage(
           3,
           "Search-Bar",
           "searchFunction",
@@ -157,7 +157,7 @@ export default {
       type: Function,
       required: false,
       default: () => {
-        propDefaultLogger(
+        defaultPropValueMessage(
           2,
           "Search-Bar",
           "onSearchResultClick",
@@ -174,7 +174,7 @@ export default {
       required: false,
       default: () => {
         const value = true;
-        propDefaultLogger(
+        defaultPropValueMessage(
           0,
           "Search-Bar",
           "showSearchResults",
@@ -189,7 +189,7 @@ export default {
       required: false,
       default: () => {
         const value = true;
-        propDefaultLogger(
+        defaultPropValueMessage(
           0,
           "Search-Bar",
           "buttonOrientationRight",
@@ -204,7 +204,7 @@ export default {
       required: false,
       default: () => {
         const value = "Type to search...";
-        propDefaultLogger(0, "Search-Bar", "placeHolderText", value);
+        defaultPropValueMessage(0, "Search-Bar", "placeHolderText", value);
         return value;
       }
     },
@@ -213,7 +213,7 @@ export default {
       required: false,
       default: () => {
         const value = true;
-        propDefaultLogger(
+        defaultPropValueMessage(
           0,
           "Search-Bar",
           "darkSearchResultTheme",
